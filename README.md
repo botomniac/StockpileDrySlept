@@ -1,6 +1,6 @@
 ## Sistema de Estoque Web
 
-Documentação disponível na [**Wiki**](https://github.com/dekxside/StockpileDrySlept/wiki).
+Documentação disponível na [**wiki**](https://github.com/dekxside/StockpileDrySlept/wiki).
 
 ### Configuração do ambiente (Windows)
 

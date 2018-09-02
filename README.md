@@ -1,14 +1,15 @@
-## Sistema de Estoque Web
+## Sicone: Sistema de Estoque Web
 
 Documentação disponível na [**wiki**](https://github.com/dekxside/StockpileDrySlept/wiki).
 
-### Configuração do ambiente (Windows)
+#### Configuração do ambiente (Windows)
 
-Baixe e instale o [**Eclipse EE**](http://www.eclipse.org/downloads/), o [**Apache Tomcat**](http://tomcat.apache.org) e o [**Hibernate**](http://hibernate.org/orm/).
 
-##### Configurando o Tomcat
+##### Configurando 
 
-    $ npm i --save express@4.16.2 -E
+````
+
+````
 
 ##### HTTP Server
 

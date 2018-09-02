@@ -1,4 +1,3 @@
-
 # Created by https://www.gitignore.io/api/web,java,maven,linux,windows,java-web
 
 ### Java ###
@@ -83,4 +82,3 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/web,java,maven,linux,windows,java-web
-/.metadata/

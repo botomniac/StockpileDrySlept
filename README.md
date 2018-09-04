@@ -20,4 +20,7 @@ Clone o projeto e abra-o no **EclipseEE**.
 
 #### Configuração do ambiente para um novo projeto (Windows)
 
-No **EclipseEE**
+No **EclipseEE**, crie um projeto **Maven**. 
+Na tela de seleção do archetype, escolha *maven-archetype-webapp*.
+Insira o **Group Id** (*com.sicone* no nosso caso). No **Artifact Id** coloque *webapp*. 
+Caso tenha dúvidas quanto ao que colocar nesses campos, veja o [guia de convenção](https://maven.apache.org/guides/mini/guide-naming-conventions.html) do Maven.

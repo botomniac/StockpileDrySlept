@@ -1,4 +1,4 @@
-## Sicone: Sistema Integrado de Estoque 
+## Sicone: Sistema Integrado de Controle de Estoque 
 ![Sicone](Misc/sicone_logo.png)
 
 Desenvolvido por [@botomniac](https://github.com/botomniac), [@dekxside](https://github.com/dekxside) e [@otacalado](https://github.com/otacalado).

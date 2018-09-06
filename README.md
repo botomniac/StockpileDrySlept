@@ -34,3 +34,9 @@ Na tela de seleção do archetype, escolha *maven-archetype-webapp*.
 Nomeie o **Group Id**, *com.sicone* no nosso caso, e no **Artifact Id** coloque *sicone*. Caso tenha dúvidas quanto ao que colocar nesses campos, veja o [guia de convenção](https://maven.apache.org/guides/mini/guide-naming-conventions.html) do Maven.
 
 <img src="Misc/g3.jpg" alt="Img3" width="380" height="380">
+
+Caso apareça algum erro relacionado a plugins do Maven como o exemplo abaixo, veja a solução [aqui]().
+````
+Could not calculate build plan: Plugin org.apache.maven.plugins:maven-resources-plugin:2.6 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+Plugin org.apache.maven.plugins:maven-resources-plugin:2.6 or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+````

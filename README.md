@@ -31,6 +31,6 @@ Na tela de seleção do archetype, escolha *maven-archetype-webapp*.
 
 <img src="Misc/g2.jpg" alt="Img2" width="380" height="380">
 
-Nomeie o **Group Id**, *com.sicone* no nosso caso, e no **Artifact Id** coloque *webapp*. Caso tenha dúvidas quanto ao que colocar nesses campos, veja o [guia de convenção](https://maven.apache.org/guides/mini/guide-naming-conventions.html) do Maven.
+Nomeie o **Group Id**, *com.sicone* no nosso caso, e no **Artifact Id** coloque *sicone*. Caso tenha dúvidas quanto ao que colocar nesses campos, veja o [guia de convenção](https://maven.apache.org/guides/mini/guide-naming-conventions.html) do Maven.
 
 <img src="Misc/g3.jpg" alt="Img3" width="380" height="380">

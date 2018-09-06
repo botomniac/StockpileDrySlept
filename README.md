@@ -1,5 +1,5 @@
 ## Sicone: Sistema Integrado de Controle de Estoque 
-![Sicone](Misc/sicone_logo.png)
+<img src="Misc/sicone_logo.png" alt="Sicone" width="120" height="40">
 
 Desenvolvido por [@botomniac](https://github.com/botomniac), [@dekxside](https://github.com/dekxside) e [@otacalado](https://github.com/otacalado).
 

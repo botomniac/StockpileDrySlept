@@ -51,7 +51,7 @@ Selecione a opção ***Force update of Snapshots/Releases*** e de Ok.
 
 <img src="Misc/e2.jpg" alt="e1" width=380 heigth=380>
 
-Caso apareça algum erro relacionado ao `Java Build Path`, abra o arquivo `pom.xml` e adcione a seguinte dependência dentro de `<dependencies>`.
+Caso apareça algum erro relacionado ao `Java Build Path`, abra o arquivo `pom.xml` e adicione a seguinte dependência dentro de `<dependencies>`:
 ````
 <dependency>
   <groupId>javax.servlet</groupId>

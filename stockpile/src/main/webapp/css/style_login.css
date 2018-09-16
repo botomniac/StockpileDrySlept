@@ -11,10 +11,10 @@ a{text-decoration: none; color: inherit;}
 a:hover{color: #f9014d;}
 /*FIM DO RESET*/
 
-/*Estilização da DIV meio*/
+/*Estilizacao da DIV meio*/
 .meio{
     text-align: center;
-    padding: 215px 0;
+    padding: 210px 0;
     background-image: url(../imgs/background_login.gif);
     background-size: cover; /* para cobrir totalmente*/
     background-position: center;

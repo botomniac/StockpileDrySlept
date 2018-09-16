@@ -1,0 +1,46 @@
+/*RESET
+--------------------------*/
+*, *::before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+
+body{font-family: 'Open Sans', sans-serif;font-size: inherit;}
+
+input, select, iframe, button{border:none;font-family: 'Open Sans', sans-serif;}
+h1, h2, h3{margin: 0; padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none; color: inherit;}
+a:hover{color: #f9014d;}
+/*---------FIM DO RESET ------------*/
+
+/*HEADER
+--------------------------*/
+.header{
+    background-color: dimgray;
+    background-image: linear-gradient(-90deg,#bcbaba, #dddddd);
+    position: fixed;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    z-index: 6;
+    border-bottom: 1px solid dimgray;
+}
+.header .logo img{
+    max-width: 200px;
+}
+.header #navegacao{
+
+    margin-left: 35%;
+    margin-top: -40px;
+    margin-bottom: 0px;
+}
+.header #navegacao ul li{
+    display: inline-block;
+}
+.header #navegacao li{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(105, 105, 105, 0.9);
+    display: inline;
+}
+.header li a:hover{color: deepskyblue}

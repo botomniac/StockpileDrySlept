@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import sicone.model.UserInfo;
-import sicone.model.Funcionario;
 
 @WebServlet("/Auth")
 public class AuthController extends HttpServlet {
@@ -33,19 +32,19 @@ public class AuthController extends HttpServlet {
 		HttpSession session = request.getSession();
 
 		try {
-			if ("funcionario".equals(user) && "".equals(pass)) {
+			if ("funcionario".equals(user) && "q".equals(pass)) {
 				UserInfo userInfo = new UserInfo();
 				userInfo.setProfile("funcionario");
-				userInfo.setNome("");
+				userInfo.setNome("Jonas da Bigorna");
 				userInfo.setLogado(true);
 				session.setAttribute("LOGADO", userInfo);
 
 				response.sendRedirect("./stockpile.jsp");
 
-			} else if ("admin".equals(user) && "".equals(pass)) {
+			} else if ("admin".equals(user) && "admin".equals(pass)) {
 				UserInfo userInfo = new UserInfo();
 				userInfo.setProfile("admin");
-				userInfo.setNome("");
+				userInfo.setNome("Admin");
 				userInfo.setLogado(true);
 				session.setAttribute("LOGADO", userInfo);
 

@@ -7,13 +7,29 @@
 <title>SICONE - Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Opens+Sans" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Opens+Sans"
+	rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+	href="css/fontawesome-all.min.css" />
 <link rel="stylesheet" type="text/css" href="css/style_login.css" />
 <script src="main.js"></script>
 </head>
 
 <body>
+	<%
+		String msg = (String) session.getAttribute("MENSAGEM");
+		if (msg != null) {
+			session.setAttribute("MENSAGEM", null);
+	%>
+	<h3>
+		<script>("<%=msg%>
+			")
+		</script>
+	</h3>
+	<%
+		}
+	%>
+
 	<!-- start LOGIN page -->
 	<div class="meio">
 		<header>
@@ -23,9 +39,8 @@
 		<h1>Sistema Integrado de Controle de Estoque</h1>
 		</header>
 		<form name="login" method="post" action="">
-			<input type="text" name="id" id="txtID" placeholder="ID" />
-			<input type="password" name="senha" id="txtSenha"
-				placeholder="Senha" /> </br>
+			<input type="text" name="id" id="TXTUSER" placeholder="ID" /> <input
+				type="password" name="senha" id="TXTPASS" placeholder="Senha" /> </br>
 			<button type="submit" id="btnEntrar">Entrar</button>
 		</form>
 	</div>

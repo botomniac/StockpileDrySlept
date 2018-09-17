@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AuthController</servlet-name>
+  	<display-name>AuthController</display-name>
+  	<description></description>
+  	<servlet-class>sicone.controller.AuthController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AuthController</servlet-name>
+  	<url-pattern>/AuthController</url-pattern>
+  </servlet-mapping>
 </web-app>

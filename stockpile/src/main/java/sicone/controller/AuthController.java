@@ -32,30 +32,30 @@ public class AuthController extends HttpServlet {
 		HttpSession session = request.getSession();
 
 		try {
-			if ("funcionario".equals(user) && "q".equals(pass)) {
+			if ("funcionario".equals(user) && "".equals(pass)) {
 				UserInfo userInfo = new UserInfo();
 				userInfo.setProfile("funcionario");
 				userInfo.setNome("Jonas da Bigorna");
 				userInfo.setLogado(true);
 				session.setAttribute("LOGADO", userInfo);
 
-				response.sendRedirect("./stockpile.jsp");
+				response.sendRedirect("/stockpile.jsp");
 
-			} else if ("admin".equals(user) && "admin".equals(pass)) {
+			} else if ("admin".equals(user) && "".equals(pass)) {
 				UserInfo userInfo = new UserInfo();
 				userInfo.setProfile("admin");
 				userInfo.setNome("Admin");
 				userInfo.setLogado(true);
 				session.setAttribute("LOGADO", userInfo);
 
-				response.sendRedirect("./admin-func.jsp");
+				response.sendRedirect("/admin-func.jsp");
 
 			} else {
 				msg = "Usuário ou senha incorretos.";
 				session.setAttribute("MENSAGEM", msg);
 				session.setAttribute("LOGADO", null);
 
-				response.sendRedirect("./index.jsp");
+				response.sendRedirect("/index.jsp");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

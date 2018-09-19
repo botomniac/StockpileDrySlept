@@ -1,13 +1,20 @@
 package sicone.model;
 
-public class Funcionario implements Pessoa {
+import java.io.Serializable;
 
-	int cpf;
-	String nomePessoa;
-	int idFuncionario;
+public class Funcionario implements Pessoa, Serializable {
+	private static final long serialVersionUID = 7680930582309971499L;
+	
+	private int cpf;
+	private String nomePessoa;
+	private int idFuncionario;
 
-	public Funcionario() {
-		// TODO Auto-generated constructor stub
+	public int getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
 	}
 
 	public String getNomePessoa() {
@@ -18,22 +25,12 @@ public class Funcionario implements Pessoa {
 		this.nomePessoa = nomePessoa;
 	}
 
-	public int getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
-	}
-
 	public int getIdFuncionario() {
-		return IdFuncionario;
+		return idFuncionario;
 	}
 
 	public void setIdFuncionario(int idFuncionario) {
-		IdFuncionario = idFuncionario;
+		this.idFuncionario = idFuncionario;
 	}
-
-	int IdFuncionario;
 
 }

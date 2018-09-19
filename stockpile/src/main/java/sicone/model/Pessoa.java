@@ -2,6 +2,7 @@ package sicone.model;
 
 public interface Pessoa {
 
-	int cpf = 0;
-	String nomePessoa = "";
+	public int cpf = 0;
+	public String nomePessoa = null;
+
 }

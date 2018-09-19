@@ -1,13 +1,12 @@
 package sicone.model;
 
-public class Fornecedor {
+import java.io.Serializable;
 
-	int cnpj;
-	String nomeEmpresa;
-
-	public Fornecedor() {
-		// TODO Auto-generated constructor stub
-	}
+public class Fornecedor implements Serializable {
+	private static final long serialVersionUID = -4121986222773473431L;
+	
+	private int cnpj;
+	private String nomeForn;
 
 	public int getCnpj() {
 		return cnpj;
@@ -17,12 +16,12 @@ public class Fornecedor {
 		this.cnpj = cnpj;
 	}
 
-	public String getNomeEmpresa() {
-		return nomeEmpresa;
+	public String getNomeForn() {
+		return nomeForn;
 	}
 
-	public void setNomeEmpresa(String nomeEmpresa) {
-		this.nomeEmpresa = nomeEmpresa;
+	public void setNomeForn(String nomeForn) {
+		this.nomeForn = nomeForn;
 	}
 
 }

@@ -1,12 +1,19 @@
 package sicone.model;
 
-public class Cliente implements Pessoa {
+import java.io.Serializable;
 
-	int cpf;
-	String nomePessoa;
+public class Cliente extends Pessoa implements Serializable {
+	private static final long serialVersionUID = -2625897989574593814L;
+	
+	private int cpf;
+	private String nomePessoa;
 
-	public Cliente() {
-		// TODO Auto-generated constructor stub
+	public int getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
 	}
 
 	public String getNomePessoa() {
@@ -15,14 +22,6 @@ public class Cliente implements Pessoa {
 
 	public void setNomePessoa(String nomePessoa) {
 		this.nomePessoa = nomePessoa;
-	}
-
-	public int getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
 	}
 
 }

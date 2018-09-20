@@ -2,7 +2,7 @@ package sicone.model;
 
 import java.io.Serializable;
 
-public class Funcionario implements Pessoa, Serializable {
+public class Funcionario extends Pessoa implements Serializable {
 	private static final long serialVersionUID = 7680930582309971499L;
 	
 	private int cpf;

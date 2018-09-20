@@ -1,8 +1,8 @@
 package sicone.model;
 
-public interface Pessoa {
+public abstract class Pessoa {
 
-	public int cpf = 0;
-	public String nomePessoa = null;
+	public int cpf;
+	public String nomePessoa;
 
 }

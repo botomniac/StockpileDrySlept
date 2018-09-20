@@ -13,8 +13,8 @@
 		
 		<script src="main.js"></script>
 	</head>
-
-	<body>
+		
+	<body class="p-3 mb-2 bg-dark text-white">
 		<%
 			String msg = (String) session.getAttribute("MENSAGEM");
 			if (msg != null) {
@@ -28,26 +28,27 @@
 		%>
 
 		<header>
-			<h1>
-				<img src="imgs/sicone_logo.png" alt="SICONE" width="600" height="500">
-			</h1>
-			<h1>Sistema Integrado de Controle de Estoque</h1>
+			<div class="container">
+				<img src="imgs/sicone_logo.png" alt="SICONE" class="rounded mx-auto d-block" width="50%">
+				<h1 class="text-justify">Sistema Integrado de Controle de Estoque</h1>
+			
+			</div>
 		</header>
 		
-		
-		<form name="login" method="post" action="">
-  			<div class="form-group">
-    			<label for="exampleInputEmail1">ID</label>
-    			<input type="text" class="form-control form-control-lg" id="TXTUSER" aria-describedby="emailHelp" placeholder="Insira seu ID">
-    			<small id="emailHelp" class="form-text text-muted">Não compartilhe seu ID ou senha com ninguém.</small>
-  			</div>
-		  	<div class="form-group">
-		    	<label for="exampleInputPassword1">Password</label>
-		    	<input type="password" class="form-control form-control-lg" id="TXTPASS" placeholder="Insira sua Senha">
-		  	</div>
-  			<button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
-		</form>
-
+		<div class="container w-25 p-3">
+			<form name="login" method="post" action="">
+	  			<div class="form-group">
+	    			<label for="exampleInputEmail1">ID</label>
+	    			<input type="text" class="form-control" id="TXTUSER" aria-describedby="emailHelp" placeholder="Insira seu ID">
+	    			<small id="emailHelp" class="form-text text-muted">Não compartilhe seu ID ou senha com ninguém.</small>
+	  			</div>
+			  	<div class="form-group">
+			    	<label for="exampleInputPassword1">Password</label>
+			    	<input type="password" class="form-control" id="TXTPASS" placeholder="Insira sua Senha">
+			  	</div>
+	  			<button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
+			</form>
+		</div>
 	</body>
 
 </html>

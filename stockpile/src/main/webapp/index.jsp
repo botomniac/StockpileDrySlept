@@ -9,12 +9,11 @@
 		<title>SICONE Login</title>
 		<link rel="icon" href="./imgs/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
-		
+		<link rel="stylesheet" type="text/css" href="css/style-login.css" />
 		<script src="main.js"></script>
 	</head>
 		
-	<body class="p-3 mb-2 bg-dark text-white">
+	<body id ="back" class="p-3 mb-2 bg-dark text-gray">
 		<%
 			String msg = (String) session.getAttribute("MENSAGEM");
 			if (msg != null) {
@@ -27,28 +26,26 @@
 			}
 		%>
 
-		<header>
-			<div class="container">
+			<div class=" container p-3 mx-auto">
 				<img src="imgs/sicone_logo.png" alt="SICONE" class="rounded mx-auto d-block" width="50%">
-				<h1 class="text-justify">Sistema Integrado de Controle de Estoque</h1>
-			
+				<h3 class="text-center font-weight-light">Sistema Integrado de Controle de Estoque</h3>
 			</div>
-		</header>
-		
-		<div class="container w-25 p-3">
-			<form name="login" method="post" action="">
+	
+			<div class="container w-25 p-3 mx-auto">
+			<form name="login" method="post" action="./AuthController">
 	  			<div class="form-group">
 	    			<label for="exampleInputEmail1">ID</label>
-	    			<input type="text" class="form-control" id="TXTUSER" aria-describedby="emailHelp" placeholder="Insira seu ID">
-	    			<small id="emailHelp" class="form-text text-muted">Não compartilhe seu ID ou senha com ninguém.</small>
+	    			<input type="text" class="form-control" name="TXTUSER" aria-describedby="emailHelp" placeholder="Insira seu ID">
+	    			<small id="emailHelp" class="form-text text-muted text-gray">Não compartilhe seu ID ou senha com ninguém.</small>
 	  			</div>
 			  	<div class="form-group">
-			    	<label for="exampleInputPassword1">Password</label>
-			    	<input type="password" class="form-control" id="TXTPASS" placeholder="Insira sua Senha">
+			    	<label for="exampleInputPassword1">Senha</label>
+			    	<input type="password" class="form-control" name="TXTPASS" placeholder="Insira sua Senha">
 			  	</div>
-	  			<button type="submit" class="btn btn-primary" id="btnEntrar">Entrar</button>
+	  			<button type="submit" class="btn btn-primary float-right" name="BTNENTRAR">Entrar</button>
 			</form>
 		</div>
+
 	</body>
 
 </html>

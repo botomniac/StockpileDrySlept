@@ -8,6 +8,7 @@ public class Funcionario extends Pessoa implements Serializable {
 	private int cpf;
 	private String nomePessoa;
 	private int idFuncionario;
+	private String password;
 
 	public int getCpf() {
 		return cpf;
@@ -32,5 +33,15 @@ public class Funcionario extends Pessoa implements Serializable {
 	public void setIdFuncionario(int idFuncionario) {
 		this.idFuncionario = idFuncionario;
 	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
 
 }
